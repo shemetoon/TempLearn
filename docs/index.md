@@ -3,6 +3,8 @@ You can use the [editor on GitHub](https://github.com/shemetoon/TempLearn/edit/g
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+[Установка wikiJS](https://github.com/shemetoon/TempLearn/blob/gh-pages/docs/%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20wikijs.md)
+
 ### Jekyll Themes
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shemetoon/TempLearn/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
