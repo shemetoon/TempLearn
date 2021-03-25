@@ -1,26 +1,26 @@
 [TOC]
 
-## Установка Wiki.JS
+## Установка Wiki.JS на Linux
 
 Все пункты установки будем выполнять преимущественно в терминале.
 
 Загружаем последнюю версию Wiki.js:
 
-```yml
+```bash
 wget https://github.com/Requarks/wiki/releases/download/2.5.144/wiki-js.tar.gz
 ```
 Создаем директорию и распаковываем в неё полученный архив, затем переходим в полученную директорию:
-```yml
+```bash
 mkdir wiki
 tar xzf wiki-js.tar.gz -C ./wiki
 cd ./wiki
 ```
 По рекомендации разработчиков, переименовываем предоставленный дистрибьютивом конфиг.файл в `config.yml`:
-```yml
+```bash
 mv config.sample.yml config.yml
 ```
 Редактировать конфиг.файл и заполнять строки по настройке Вашей БД и настройке портов рекомендуется согласно предоставленному референсу > [Configuration Reference](https://docs.requarks.io/install/config):
-```yml
+```bash
 nano config.yml
 ```
 После того как настроили конфигурационный файл (мне для тестов подошли предустановленные настройки) - переходим к созданию базы данных (PostreSQL).
@@ -29,16 +29,16 @@ nano config.yml
 
 ## Создание БД (PostgreSQL)
 Если в системе не установлена данная система, то предварительно установим её:
-```yml
+```bash
 sudo apt install postgresql-12.4
 ```
 После установки системы управления зайдем в оболочку системы управления базами данных:
 
-```yml
+```bash
 sudo -u postgres psql
 ```
 Если все хорошо, мы увидим приглашение системы:
-```yml
+```bash
 psql (12.4 (Ubuntu 12.4-0ubuntu0.20.04.1))
 Type "help" for help.
 
@@ -120,7 +120,7 @@ Wiki.js requires one of the many supported database engines.
 
 >PostgreSQL is the recommended engine for best performance, features and future compatibility.
 
-```
+```postgres
 db:
   type: postgres
   host: localhost
